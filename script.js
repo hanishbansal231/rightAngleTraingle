@@ -1,14 +1,9 @@
-let outputBtn = document.querySelector('#outputBtn');
-
-outputBtn.addEventListener('click' , () =>{
-  let inputValue = document.querySelector('#inputValue').value;
-  let showValue = document.querySelector('#showValue');
-  let firstLetter = inputValue.charAt(0);
-  if(firstLetter == firstLetter.toUpperCase()){
-    showValue.innerText = inputValue;
-    showValue.style.color = "green";
-  }else{
-    showValue.innerText = "First Letter Capitalize Write";
-    showValue.style.color = "red";
-  }
-});
+let pattern = " ";
+for(let i = 0;i < 6;i++){
+   for(let j = 0;j < 6-i;j++){
+      pattern += "*";
+   }
+  
+   pattern += "\n";
+}
+console.log(pattern);
